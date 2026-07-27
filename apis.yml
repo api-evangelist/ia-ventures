@@ -1,8 +1,25 @@
 aid: ia-ventures
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ia-ventures.png
 name: IA Ventures
-description: 'IA Ventures is a company surfaced as a portfolio company of foundry-group and added to the
-  API Evangelist network as a stub for enrichment. Sector: venture-capital. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'IA Ventures is an early-stage venture capital firm based in New York
+  City, at 920 Broadway, 15th Floor. It backs founders building data-driven businesses
+  across financial technology, machine learning, and infrastructure, typically at
+  the seed and early stage. IA Ventures was surfaced as a portfolio-adjacent firm
+  within the API Evangelist network and is profiled here as a venture-capital company
+  rather than an API producer: it publishes a minimal single-page website and does
+  not expose a public API, developer portal, or event surface. This profile captures
+  the firm''s identity and the security posture of its public domain.'
 url: https://raw.githubusercontent.com/api-evangelist/ia-ventures/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Venture Capital
+- Early Stage
+- Seed
+- Fintech
+- Data
+- New York
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +47,14 @@ maintainers:
 common:
 - type: Website
   url: https://www.iaventures.com
+- type: Portfolio
+  url: https://twitter.com/i/lists/31108395
+- type: DomainSecurity
+  url: security/ia-ventures-domain-security.yml
+- type: WellKnown
+  url: well-known/ia-ventures-well-known.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
